@@ -1,0 +1,7 @@
+##### Telescope #####
+<C-p> = Find files
+<leader>fg = Live grep
+
+##### Neo-tree #####
+<C-n> = Reveal explorer
+
