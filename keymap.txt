@@ -5,3 +5,8 @@
 ##### Neo-tree #####
 <C-n> = Reveal explorer
 
+##### Language Server #####
+<K> = Hover
+<gD> = Go to definition
+<gd> = Go to declaration
+<leader>ca = Code action
