@@ -10,3 +10,6 @@
 <gD> = Go to definition
 <gd> = Go to declaration
 <leader>ca = Code action
+
+##### None-ls #####
+<leader>gf = Format buffer

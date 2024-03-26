@@ -8,4 +8,3 @@ vim.opt.softtabstop = 2
 
 -- Leader key
 vim.g.mapleader = " "
-

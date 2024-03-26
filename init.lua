@@ -20,4 +20,3 @@ require("options")
 
 -- Plugins
 require("lazy").setup("plugins")
-
