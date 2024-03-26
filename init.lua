@@ -12,6 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Auto-commands
+require("autocmds")
+
 -- Options
 require("options")
 
