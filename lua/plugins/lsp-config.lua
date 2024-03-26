@@ -11,10 +11,14 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         -- Ensure language servers are installed
+        -- Note: Don't forget to add this servers in the config below
         ensure_installed = {
-          "lua_ls",
-          "clangd",
-          "tsserver",
+          "lua_ls",           -- Lua
+          "clangd",           -- C/C++
+          "tsserver",         -- Javascript/TypeScript
+          "pyright",          -- Python
+          "rust_analyzer",    -- Rust
+          "volar",            -- Vue
         }
       })
     end
@@ -28,6 +32,9 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.clangd.setup({})
       lspconfig.tsserver.setup({})
+      lspconfig.pyright.setup({})
+      lspconfig.rust_analyzer.setup({})
+      lspconfig.volar.setup({})
 
       -- key bindings
       vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {})
