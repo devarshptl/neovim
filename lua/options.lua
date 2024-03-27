@@ -8,3 +8,6 @@ vim.opt.softtabstop = 2
 
 -- Leader key
 vim.g.mapleader = " "
+
+-- Line number
+vim.wo.relativenumber = true
