@@ -6,6 +6,6 @@ local autocmd = vim.api.nvim_create_autocmd -- Create autocommand
 -- Reset cursor on exiting VIm
 local resetCursorShapeOnExit = augroup("ResetCursorShapeOnExit", { clear = true })
 autocmd("VimLeave", {
-  group = resetCursorShapeOnExit,
-  command = "set guicursor=a:hor10-blinkon1",
+	group = resetCursorShapeOnExit,
+	command = "set guicursor=a:hor10-blinkon1",
 })
