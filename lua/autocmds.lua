@@ -3,9 +3,18 @@
 local augroup = vim.api.nvim_create_augroup -- Create/get autocommand group
 local autocmd = vim.api.nvim_create_autocmd -- Create autocommand
 
--- Reset cursor on exiting VIm
-local resetCursorShapeOnExit = augroup("ResetCursorShapeOnExit", { clear = true })
+-- Cursor
+local cursorGroup = augroup("CursorGroup", { clear = true })
 autocmd("VimLeave", {
-	group = resetCursorShapeOnExit,
-	command = "set guicursor=a:hor10-blinkon1",
+  group = cursorGroup,
+  command = "set guicursor=a:hor10-blinkon1",
+})
+
+-- Buffer
+local bufferGroup = augroup("BufferGroup", { clear = true })
+autocmd("BufWritePre", {
+  group = bufferGroup,
+  callback = function()
+    vim.lsp.buf.format()
+  end,
 })
