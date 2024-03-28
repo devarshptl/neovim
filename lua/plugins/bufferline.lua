@@ -7,7 +7,7 @@ return {
     local bufferline = require("bufferline")
     bufferline.setup({
       options = {
-        mode = 'buffers',
+        mode = "buffers",
         separator_style = "slant",
         diagnostics = "nvim_lsp",
         hover = {
@@ -22,7 +22,11 @@ return {
             separator = true,
           }
         },
-      },
+        diagnostics_indicator = function(count, level)
+          local icon = level:match("error") and " " or " "
+          return " " .. icon .. count
+        end,
+      }
     })
 
     -- Keymap
