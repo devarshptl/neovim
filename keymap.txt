@@ -1,5 +1,5 @@
 ##### Telescope #####
-<C-p> = Find files
+<leader>ff = Find files
 <leader>fg = Live grep
 
 ##### Neo-tree #####

@@ -11,3 +11,9 @@ vim.g.mapleader = " "
 
 -- Line number
 vim.wo.relativenumber = true
+
+-- Terminal
+vim.opt.termguicolors = true
+
+-- Mouse
+vim.opt.mousemoveevent = true
