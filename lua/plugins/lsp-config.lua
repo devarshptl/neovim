@@ -8,6 +8,7 @@ local lsp_packages = {
   "pyright",       -- Python
   "rust_analyzer", -- Rust
   "volar",         -- Vue
+  "angularls",     -- Angular
 }
 
 local function lsp_setup(lspconfig, lsp_list, setup_obj)
