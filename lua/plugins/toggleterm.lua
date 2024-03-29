@@ -7,10 +7,9 @@ return {
     toggleterm.setup({
       size = 25,
       direction = "float",
-      open_mapping = [[<C-`>]],
     })
 
     -- Keymap
-    vim.keymap.set("n", "<C-`>", ":ToggleTerm<CR>", {})
+    vim.keymap.set("n", "<C-/>", ":ToggleTerm<CR>", { silent = true, desc = "Toggle terminal" })
   end,
 }

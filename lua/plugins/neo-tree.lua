@@ -17,12 +17,12 @@ return {
             -- vimc.cmd("Neotree close")
             -- OR
             require("neo-tree.command").execute({ action = "close" })
-          end
+          end,
         },
       },
     })
 
     -- Keymap
-    vim.keymap.set("n", "<C-e>", ":Neotree toggle<CR>", {})
+    vim.keymap.set("n", "<C-e>", ":Neotree toggle<CR>", { silent = true, desc = "Toggle file explorer" })
   end,
 }

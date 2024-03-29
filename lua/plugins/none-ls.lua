@@ -1,23 +1,23 @@
 -- None-ls
 return {
-	"nvimtools/none-ls.nvim",
-	config = function()
-		local null_ls = require("null-ls")
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
 
-		null_ls.setup({
-			sources = {
-				-- Install the following packages from Mason
-				-- Formatters
-				null_ls.builtins.formatting.stylua,
-				null_ls.builtins.formatting.prettier,
-				null_ls.builtins.formatting.black,
+    null_ls.setup({
+      sources = {
+        -- Install the following packages from Mason
+        -- Formatters
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.formatting.black,
 
-				-- Linters
-				null_ls.builtins.diagnostics.eslint_d,
-			},
-		})
+        -- Linters
+        null_ls.builtins.diagnostics.eslint_d,
+      },
+    })
 
-		-- Keymap
-		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
-	end,
+    -- Keymap
+    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { silent = true, desc = "Format current buffer" })
+  end,
 }
