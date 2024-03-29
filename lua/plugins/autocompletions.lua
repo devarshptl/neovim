@@ -49,7 +49,7 @@ return {
     config = function()
       require("lsp_signature").setup({
         toggle_key = "<C-k>",
-        select_signature_key = "<tab>",
+        select_signature_key = "<C-tab>",
       })
     end,
   },
