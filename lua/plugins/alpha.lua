@@ -20,8 +20,9 @@ return {
 		dashboard.section.buttons.val = {
 			dashboard.button("SPC f f", "󰈞  Find file"),
 			dashboard.button("SPC f g", "󰈬  Find word"),
-			dashboard.button("SPC f r", "󰈬  Frequent Files"),
-			dashboard.button("<C-e>", "  Explorer"),
+			dashboard.button("SPC f r", "󰈬  Frequent/MRU Files"),
+			dashboard.button("CTRL-e", "󰈞  Open Explorer", "<C-e>"),
+			dashboard.button("CTRL-/", "  Open Terminal", "<C-/>"),
 		}
 
 		-- Footer

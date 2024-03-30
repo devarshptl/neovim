@@ -7,6 +7,7 @@ return {
 		toggleterm.setup({
 			size = 25,
 			direction = "float",
+			open_mapping = [[<C-/>]],
 		})
 
 		-- Keymap
