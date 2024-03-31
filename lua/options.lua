@@ -1,5 +1,9 @@
 -- Contains the custom options for VIm Editor
 
+-- Disable VIm file explorer
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Tab setting
 vim.opt.expandtab = true
 vim.opt.tabstop = 2

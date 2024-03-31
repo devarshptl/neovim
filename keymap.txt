@@ -2,8 +2,8 @@
 <leader>ff = Find files
 <leader>fg = Live grep
 
-##### Neo-tree #####
-<C-n> = Reveal explorer
+##### Nvim-tree #####
+<C-CR> = Reveal explorer
 
 ##### Language Server #####
 <K> = Hover

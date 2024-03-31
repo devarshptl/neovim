@@ -16,7 +16,7 @@ return {
 				},
 				offsets = {
 					{
-						filetype = "neo-tree",
+						filetype = "NvimTree",
 						text = "File Explorer",
 						highlight = "Directory",
 						separator = true,
@@ -30,7 +30,7 @@ return {
 		})
 
 		-- Keymap
-		vim.keymap.set("n", "<C-w>", ":bdelete<CR>", { silent = true, desc = "Delete current buffer" })
+		vim.keymap.set("n", "<C-x>", ":bdelete<CR>", { silent = true, desc = "Delete current buffer" })
 		vim.keymap.set("n", "<C-a>", ":BufferLineCyclePrev<CR>", { silent = true, desc = "Go to prev buffer" })
 		vim.keymap.set("n", "<C-d>", ":BufferLineCycleNext<CR>", { silent = true, desc = "Go to next buffer" })
 	end,
