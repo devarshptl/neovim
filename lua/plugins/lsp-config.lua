@@ -8,7 +8,6 @@ local lsp_packages = {
 	"pyright", -- Python
 	"gopls", -- Go
 	"volar", -- Vue
-	"angularls", -- Angular
 }
 
 return {
