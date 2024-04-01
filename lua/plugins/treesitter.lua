@@ -7,7 +7,9 @@ return {
 		config = function()
 			local config = require("nvim-treesitter.configs")
 			config.setup({
-				auto_install = true,
+				-- Mandatory parsers installed here
+				ensure_installed = { "lua", "c", "cpp", "rust", "go", "javascript", "typescript", "vim" },
+				auto_install = true, -- Auto installs required parsers
 				highlight = { enable = true },
 				indent = { enable = true },
 			})

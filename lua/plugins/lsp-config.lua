@@ -23,6 +23,17 @@ return {
 			},
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "neovim/nvim-lspconfig" },
+			{
+				"ray-x/lsp_signature.nvim",
+				event = "VeryLazy",
+				config = function()
+					require("lsp_signature").setup({
+						floating_window = false,
+						toggle_key = "<C-k>",
+						select_signature_key = "<M-tab>",
+					})
+				end,
+			},
 		},
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()

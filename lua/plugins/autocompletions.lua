@@ -30,7 +30,7 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
-					["<C-Space>"] = cmp.mapping.complete(),
+					["<C-leader>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
 				}),
@@ -40,16 +40,6 @@ return {
 				}, {
 					{ name = "buffer" },
 				}),
-			})
-		end,
-	},
-	{
-		"ray-x/lsp_signature.nvim",
-		event = "VeryLazy",
-		config = function()
-			require("lsp_signature").setup({
-				toggle_key = "<C-k>",
-				select_signature_key = "<C-tab>",
 			})
 		end,
 	},

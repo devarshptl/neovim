@@ -30,8 +30,5 @@ return {
 				null_ls.builtins.diagnostics.eslint_d,
 			},
 		})
-
-		-- Keymap
-		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { silent = true, desc = "Format current buffer" })
 	end,
 }
