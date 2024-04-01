@@ -4,10 +4,15 @@
 local lsp_packages = {
 	"lua_ls", -- Lua
 	"clangd", -- C/C++
+	"gopls", -- Go
+	"html", -- HTML
+	"cssls", -- CSS
+	"jsonls", -- JSON
 	"tsserver", -- Javascript/TypeScript
 	"pyright", -- Python
 	"gopls", -- Go
 	"volar", -- Vue
+	"dockerls", -- Docker
 }
 
 return {
